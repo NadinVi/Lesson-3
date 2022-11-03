@@ -20,7 +20,7 @@ switch(numOrStr) {
     case '':
         console.log('Empty String');
         break;
-    //case isNaN:
+    case NaN = true:
         console.log('number is Ba_NaN');
         break;
     default:
