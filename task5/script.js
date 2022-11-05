@@ -4,25 +4,27 @@
 //  console.log('ви скасували')
 //  } else if( numOrStr.trim() === '' ) {
 // console.log('Empty String');
-// } else if ( isNaN( +numOrStr ) ) {
-//  console.log(' number is Ba_NaN')
+// } else if (isNaN(+numOrStr)) {
+//  console.log('number is Ba_NaN')
 //  } else {
 //  console.log('OK!')
 //  }
 
 
-
 numOrStr = prompt('input number or string');
-switch(numOrStr) {
+switch (isNaN(+numOrStr) || numOrStr && numOrStr.trim())
+{
     case null:
-        console.log('ви скасували');
+        console.log('ви скасували')
         break;
-    case '': 
-        console.log('Empty String');
+    case '':
+        console.log('Empty String')
         break;
-    case numOrStr:
-        console.log(' number is Ba_NaN');
+    case  true:
+        console.log(' number is Ba_NaN')
         break;
     default:
-        console.log('OK!');
+        console.log('OK!')
 }
+
+
